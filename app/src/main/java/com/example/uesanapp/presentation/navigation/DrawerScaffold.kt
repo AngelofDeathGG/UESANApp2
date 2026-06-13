@@ -55,12 +55,28 @@ fun DrawerScaffold(navController: NavController,
                         navController.navigate("permissions")
                     }
                 )
-                //Permisions
+                //Favorites
                 NavigationDrawerItem(
                     label = { Text("Favorites") },
                     selected = false,
                     onClick = {
                         navController.navigate("favorites")
+                    }
+                )
+                //Football
+                NavigationDrawerItem(
+                    label = { Text("Football") },
+                    selected = false,
+                    onClick = {
+                        navController.navigate("football")
+                    }
+                )
+                //Logout
+                NavigationDrawerItem(
+                    label = { Text("Logout") },
+                    selected = false,
+                    onClick = {
+                        navController.navigate("login")
                     }
                 )
             }

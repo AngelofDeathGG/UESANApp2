@@ -62,14 +62,25 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-    implementation(platform("com.google.firebase:firebase-bom:34.14.0"))
+
+
     //Navigation Compose
     implementation("androidx.navigation:navigation-compose:2.9.8")
     //Coil compose
     implementation("io.coil-kt:coil-compose:2.7.0")
 
     implementation("androidx.compose.material:material-icons-core:1.7.8") // or latest version
-    implementation("androidx.compose.material:material-icons-extended:1.7.8")
+    //FirebSE BoM
+    implementation(platform("com.google.firebase:firebase-bom:34.14.0"))
+
+    implementation("com.google.firebase:firebase-analytics")
+
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //Interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 
     //Room
     implementation(libs.androidx.room.runtime)
